@@ -10,7 +10,7 @@ import { JwtStrategy } from './jwt.strategy';
     PassportModule,
     JwtModule.register({
       secret: 'secretKey', // Cambiar a una variable de entorno
-      signOptions: { expiresIn: '1h' }, // Token válido por 1 hora
+      signOptions: { expiresIn: '30m' }, // Token válido por 1 hora
     }),
   ],
   providers: [AuthService, JwtStrategy],
